@@ -20,17 +20,73 @@
           Crea tu cuenta con <strong>yeraygarfru@gmail.com</strong>
         </p>
         <form>
-          <div class="form-group">
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre (opcional)" required>
+          <div class="form-row">
+            <div class="form-group column-2">
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre (opcional)">
+            </div>
+            <div class="form-group column-2">
+              <input type="text" class="form-control" id="apellidos" placeholder="Apellidos (opcional)">
+            </div>
           </div>
-          <br>
-          <div class="form-group">
-            <input type="text" class="form-control" id="apellido" placeholder="Apellido (opcional)" required>
+          
+          <div class="form-row">
+            <div class="form-group column-3">
+              <input type="date" class="form-control" id="fecha-nacimiento" required>
+            </div>
+            <div class="form-group column-3">
+              <select class="form-control" id="genero" required>
+                <option value="" disabled selected>Selecciona tu género</option>
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+                <option value="prefiero-no-decirlo">Prefiero no decirlo</option>
+              </select>
+            </div>
+            <br><br><br><br>
+            <div class="form-group column-3">
+              <input type="text" class="form-control" id="nacionalidad" placeholder="Nacionalidad">
+            </div>
           </div>
-          <br>
-          <div class="form-group">
-            <input type="password" class="form-control" id="contraseña" placeholder="Elige una contraseña" required>
+          
+          <div class="form-row">
+            <div class="form-group column-4">
+              <select class="form-control" id="tipo-identificacion" required>
+                <option value="" disabled selected>Selecciona tipo de identificación</option>
+                <option value="dni">DNI</option>
+                <option value="nie">NIE</option>
+                <option value="pasaporte">Pasaporte</option>
+              </select>
+            </div>
+            <div class="form-group column-4">
+              <input type="text" class="form-control" id="numero-identificacion" placeholder="Número de Identificación">
+            </div>
+            <div class="form-group column-4">
+              <select class="form-control" id="estado-civil" required>
+                <option value="" disabled selected>Selecciona tu estado civil</option>
+                <option value="soltero">Soltero/a</option>
+                <option value="casado">Casado/a</option>
+                <option value="divorciado">Divorciado/a</option>
+                <option value="viudo">Viudo/a</option>
+                <option value="pareja-hecho">Pareja de hecho</option>
+              </select>
+            </div>
           </div>
+
+          <div class="form-group form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="promociones">
+            <label class="form-check-label" for="promociones">
+              ¡Sí! Quiero recibir por correo electrónico ofertas especiales y actualizaciones de los productos y servicios de las <a href="https://privacy.thewaltdisneycompany.com/es-es/definiciones/#FAMILIA-DE-EMPRESAS-DE-WALT-DISNEY" target="_blank">empresas del Grupo Disney</a>.
+            </label>
+          </div>
+          
+          <p class="texto">
+            Al crear una cuenta, te comprometes a cumplir las 
+            <a href="https://disneytermsofuse.com/spanish/" target="_blank" rel="noopener noreferrer">Condiciones de uso</a> 
+            y reconoces haber leído la <a href="https://privacy.thewaltdisneycompany.com/es-es/politica-de-privacidad/" target="_blank" rel="noopener noreferrer">Política de privacidad</a>, la <a href="https://privacy.thewaltdisneycompany.com/es-es/politica-de-privacidad/que-son-las-cookies/" target="_blank" rel="noopener noreferrer">Política de cookies</a> y los 
+            <a href="https://privacy.thewaltdisneycompany.com/es-es/politica-de-privacidad/aviso-de-privacidad/" target="_blank" rel="noopener noreferrer">Privacidad en el Reino Unido y en la UE</a>. <a href="#">Ver más...</a>
+          </p>
+          
+          <button type="submit" class="btn btn-primary btn-block">Aceptar y continuar</button>
         </form>
       </div>
     </div>
