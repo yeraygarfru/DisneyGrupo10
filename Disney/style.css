@@ -15,7 +15,7 @@ body {
   position: relative;
   top: 35px; 
   text-align: center;
-  margin-bottom: 130px;
+  margin-bottom: 275px;
 }
 
 .top-image {
@@ -28,7 +28,7 @@ body {
   padding: 70px;
   background-color: #ffffff;
   border: 1px solid #fff;
-  width: 580px;
+  width: 800px; 
 }
 
 .form-control {
@@ -82,25 +82,22 @@ form .form-check-label {
   margin-bottom: 20px; 
 }
 
-.column-2 {
-  flex:  50%; 
+.column-40 {
+  flex: 40%; 
   padding: 5px; 
 }
 
-.column-3 {
-  flex: 33.33%; 
+.column-30 {
+  flex: 30%; 
   padding: 5px; 
 }
 
-.column-4 {
-  flex: 25%; 
+.column-20 {
+  flex: 20%; 
   padding: 5px; 
 }
 
-@media (max-width: 768px) {
-  .column-2,
-  .column-3,
-  .column-4 {
-    flex: 100%;
-  }
+.column-100 {
+  flex: 100%; 
+  padding: 5px; 
 }
