@@ -15,7 +15,7 @@ body {
   position: relative;
   top: 35px; 
   text-align: center;
-  margin-bottom: 275px;
+  margin-bottom: 550px;
 }
 
 .top-image {
@@ -36,6 +36,7 @@ body {
   font-size: 14px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
+  margin-bottom: 15px; 
 }
 
 .titulo {
@@ -76,28 +77,23 @@ form .form-check-label {
   text-decoration: underline; 
 }
 
-.form-row {
-  display: flex;
-  flex-wrap: wrap; 
-  margin-bottom: 20px; 
+@media (max-width: 576px) { /* Pantallas pequeñas sm*/
+  .rounded-container {
+      width: 100%;
+      padding: 40px; 
+  }
 }
 
-.column-40 {
-  flex: 40%; 
-  padding: 5px; 
+@media (min-width: 576px) and (max-width: 768px) { /* Pantallas medianas md */
+  .rounded-container {
+      width: 90%; 
+      padding: 50px; 
+  }
 }
 
-.column-30 {
-  flex: 30%; 
-  padding: 5px; 
-}
-
-.column-20 {
-  flex: 20%; 
-  padding: 5px; 
-}
-
-.column-100 {
-  flex: 100%; 
-  padding: 5px; 
+@media (min-width: 768px) and (max-width: 992px) { /* Pantallas grandes lg */
+  .rounded-container {
+      width: 80%; 
+      padding: 60px; 
+  }
 }
