@@ -34,6 +34,14 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <input type="date" class="form-control" id="fecha-nacimiento" required>
                     </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <select class="form-control" id="genero" required>
+                            <option value="" disabled selected>Género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4">
@@ -184,7 +192,7 @@
                 </div>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <input type="url" class="form-control" id="lugar-nacimiento" placeholder="Lugar de Nacimiento">
+                        <input type="url" class="form-control" id="pais" placeholder="País">
                     </div>
                 </div>
 
@@ -200,7 +208,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="tarjeta">
-                            <img src="img/pro.jpg" alt="Plan Pro" class="tarjetaimagen">
+                            <img src="img/pro.png" alt="Plan Pro" class="tarjetaimagen">
                             <h6 class="tarjetatitulo">Plan pro</h6>
                             <p class="tarjetatexto">Funciones avanzadas para mayor rendimiento.</p>
                         </div>
@@ -213,6 +221,7 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <h5>Producto secundario</h5>
                 <div class="row g-3">
                     <div class="col-12 col-md-6 col-lg-4">
@@ -226,18 +235,66 @@
                         <div class="tarjeta">
                             <img src="img/Tecnico.jpg" alt="Plan Pro" class="tarjetaimagen">
                             <h6 class="tarjetatitulo">Instalacion en casa</h6>
-                            <p class="tarjetatexto">Un técnico te prepara la aplicacion en la smart TV o te suministra el dispositivo necesario</p>
+                            <p class="tarjetatexto">Un técnico te prepara la aplicacion en la smart TV</p>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="tarjeta">
                             <img src="img/Convenio.jpeg" alt="Plan Premium" class="tarjetaimagen">
-                            <h6 class="tarjetatitulo">Convenio Netflix y HBO</h6>
+                            <h6 class="tarjetatitulo">Entrega</h6>
                             <p class="tarjetatexto">Más posibilidades de peliculas y series</p>
                         </div>
                     </div>
                 </div>
+                <br>
+                <h5>Método de pago</h5>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <select class="form-control" id="tipo-pago" required>
+                            <option value="">Tipo de pago</option>
+                            <option value="transferencia">Solo permitimos transferencia</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="nombre-titular" placeholder="Nombre del titular" required>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="date   " class="form-control" id="fecha-caducidad" placeholder="Fecha de caducidad" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="codigo-seguridad" placeholder="Código de seguridad (CVV)" required>
+                    </div>
+                </div>
 
+                <h5>Datos bancarios</h5>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="nombre-banco" placeholder="Nombre del banco" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="numero-cuenta" placeholder="Número de cuenta (IBAN)" required>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="swift-bic" placeholder="Swift/BIC" required>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <select class="form-control" id="tipo-cuenta" required>
+                            <option value="" disabled selected>Tipo de cuenta</option>
+                            <option value="corriente">Corriente</option>
+                            <option value="ahorro">Ahorro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <input type="text" class="form-control" id="sucursal" placeholder="Sucursal" required>
+                    </div>
+                </div>
+                
                 <div class="form-group form-check mb-3">
                     <input type="checkbox" class="form-check-input" id="promociones">
                     <label class="form-check-label" for="promociones">
@@ -256,3 +313,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qS67Hj0P6qFwD1rw4jJHms+QRUBaZ0V6F9Z0S6FO2t2wDq2INlNKc68n1m4uPvmR" crossorigin="anonymous"></script>
 </body>
 </html>
+
