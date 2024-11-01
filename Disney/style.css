@@ -34,8 +34,8 @@ body {
 .form-control {
   height: 60px;
   font-size: 14px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+  background-color:  #f0f2f5;
+  border: none;
   margin-bottom: 15px; 
 }
 
@@ -53,9 +53,17 @@ body {
   height: auto;
 }
 
-.btn-primary {
-  background-color: #007bff;
-  border-color: #007bff;
+.form-check-input {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #0202a0;
+  border: 2px  #0202a0; 
 }
 
 form .form-check-label {
@@ -103,6 +111,24 @@ form .form-check-label {
 .tarjeta p.tarjetatexto {
   font-size: 0.9rem;
   color: #6c757d;
+}
+
+.btn {
+  background-color: #0202a0;
+  color: white; 
+  border: none;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: #00008B; 
+  color: white; 
 }
 
 
